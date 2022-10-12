@@ -18,16 +18,16 @@ with st.sidebar:
     
     #INPUTS DE LA APLICACION   
     edad = st.number_input('Edad', 1, 100)
-    sexo = st.selectbox('Sexo', ['0','1'])
-    tipo_dolor_toracico = st.radio('Tipo de dolor torácico', ['1','2','3'])
+    sexo = st.selectbox('Sexo 0-Mujer 1-Hombre ', ['0','1'])
+    tipo_dolor_toracico = st.radio('Dolor torácico 1-Angina típica, 2-Angina atípica 3-Dolor no angina 4-Asintomático', ['1','2','3','4'])
     presion_arterial_sangre = st.slider('Presión arterial', 50, 250)
     colesterol_serico = st.slider('Colesterol sérico', 100, 500)
     presion_arterial_reposo = st.radio('Presión arterial reposo', ['0','1','2'])
-    angina_inducida_ejercicio = st.selectbox('Angina inducida ejercicio', ['0','1'])
+    angina_inducida_ejercicio = st.selectbox('Angina inducida ejercicio - 1-Si 0-No', ['0','1'])
     pico_anterior = st.number_input('Pico anterior', 0.00, 10.00)
-    segmento_st_ejercio_maximo = st.selectbox('Segmento ejercicio máximo', ['0','1','2'])
-    num_vasos_coloreados_fluoroscopia = st.selectbox('Número vasos coloreados', ['0','1','2','3'])
-    talasemia = st.selectbox('Talasemia', ['1','2','3'])
+    segmento_st_ejercio_maximo = st.selectbox('Segmento ejercicio máximo 1-Ascendente 2-Plano 3-Descendente', ['0','1','2'])
+    num_vasos_coloreados_fluoroscopia = st.selectbox('Número de vasos coloreados', ['0','1','2','3'])
+    talasemia = st.selectbox('Talasemia 1-Normal 2-Defecto fijo 7-Defecto reversible', ['1','2','3'])
 
 #MAIN
 st.title('MODELO ANÁLISIS ATAQUE CARDIACO')
